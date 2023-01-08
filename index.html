@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset */
+         *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+           /* General Rules */
+        @font-face {
+            font-family: 'Roboto', sans-serif;
+            src:  url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Roboto', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+            font-weight: 700;
+        }
+        body{
+            width: 90%;
+            height:calc(100vh - 1px) ;
+            background-color: rgb(64 13 78);
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.25rem;
+            align-items: center;
+            text-align: left;
+            font-family: 'Roboto' , sans-serif;
+            font-weight: 400;
+        }
+        /* Start Box */
+        .big{
+            width: 90%;
+            background-color:rgb(74 43 82);
+            padding: 1.25rem;
+            border-radius: 0.625rem;
+            display: inline-flex;
+        }
+        .box1{
+            width: 650px;
+            height:200px ;
+            padding-top: 1rem;
+            background-color:rgb(189 131 203)
+        }
+        .box2{
+            width: 650px;
+            height:100px ;
+            padding-top: 1rem;
+            background-color:rgb(189 131 203);
+            align-items: center;
+            margin-left: 1rem;
+            margin-top: 2rem;
+        }
+        .ss{
+            width: 90%;
+            height:65px ;
+            padding-top: 1rem;
+            border-radius: .5rem;
+            background-color:rgb(255, 205, 234);
+            color: rgb(112, 25, 25);
+            margin:auto;
+            text-align: center;
+            font-size: 25px;
+        }
+        .t{
+            margin-top: -60px;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: rgb(234, 110, 207);
+        }
+        .frist{
+            color: rgb(244, 159, 226);
+            font-size: 20px;
+            margin-left: 1rem;
+            border-color: transparent;
+        }
+        .sec{
+            width: 90%;
+            height: 35px;
+            border-radius: .5rem;
+            margin-left: 1rem;
+            margin-bottom: .4rem;
+            border-color: transparent;
+        }
+        .last{
+            width: 17%;
+            height: 35px;
+            border-radius: .3rem;
+            margin-left: 1.2rem;
+            margin-top: .7rem;
+            color: #fff;
+            background-color:rgb(209, 113, 188);
+            border-color: transparent;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="box1">
+            <form action="#">
+                <label class="frist" for="ttt"> Task Title </label>
+                <br>
+                <input class="sec" type="text" id="ttt" value="Type Your Title Here">
+                <br>
+                <label class="frist" for="ttt"> Task Date </label>
+                <br>
+                <input class="sec" type="date" id="ttt">
+                <br>
+                <input class="last" type="submit" value="Add Task">
+            </form>
+        </div>
+        <div class="box2">
+            <h1 class="t">
+                List Tasks
+            </h1>
+            <div class="ss"><p>
+                No Tasks Added yet
+            </div></p>
+        </div>
+    </div>
+</body>
+</html>
